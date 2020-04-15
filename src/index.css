@@ -11,3 +11,94 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wrapper{
+  padding: 5rem 2rem;
+  margin: 25px auto;
+  width: 600px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+.rm{
+  background:url(../src/img/close.svg) no-repeat;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+span > strong{
+  margin: 0px 7px 0px 15px;
+  color: #32cd32;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+.add_form{
+  margin:20px 0px 40px;
+}
+
+.add_todo__item{
+  margin-right: 20px;
+  padding: 7px 10px;
+  border: none;
+  border: 1px solid limegreen;
+  outline: none;
+}
+
+.btn_add{
+  padding: 7px 20px;
+  border: none;
+  background-color: limegreen;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn_add:hover{
+  background-color: #38b338;
+  transition: 0.3s;
+}
+
+.have_to{
+  background-color: #fff;
+}
+
+.loader_wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin: 60px 8px;
+  border-radius: 50%;
+  border: 6px solid limegreen;
+  border-color: limegreen transparent limegreen transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
